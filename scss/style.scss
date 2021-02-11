@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar.active {
+    margin-left: -215px;
+}
+
+#sidebar {
+    min-width: 215px;
+    max-width: 215px;
+    min-height: 100vh;
+    background: #3c4142;
+    color: white;
+    transition: all 0.3s;
+    position: fixed;
+
+    .sidebar-header {
+        padding: 20px;
+        background: #3c4142;
+    }
+
+    .sidebar-footer-download {
+        padding: 20px 10px;
+        background: #3c4142;
+        //border-bottom: 1px solid #4e5354;
+    }
+    .sidebar-footer-social {
+        padding: 20px 10px;
+        a {
+            &:hover {
+                color: #f16522;
+            }
+        }
+    }
+    .components {
+        border-bottom: 1px solid #4e5354;
+    }
+    ul {
+        a {
+            padding: 10px 20px;
+            font-size: 15px;
+            display: block;
+            &:hover {
+                color: #f16522;
+            }
+        }
+        li.active {
+            a {
+                color: #f16522;
+                background: white;
+                border-radius: 0px 100px 100px 0px;
+                width: 200px;
+                border-left: 3px solid #f16522;
+            }
+        }
+    }
+}
+
+.login {
+    background-color: #fb9937;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    padding: 5px 12px;
+    align-self: center;
+    border: none;
+}
+.header-menu {
+    background: #3c4142;
+    min-width: 100vw;
+    //min-height: 100px;
+    max-height: 100px;
+    background: #3c4142;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.menu-top {
+    a {
+        color: white;
+        &:hover {
+            color: #f16522;
+        }
+        &.active {
+            color: #f16522;
+        }
+    }
+}
+
+.menu-top-right {
+    a {
+        color: white;
+        &:hover {
+            font-size: 20px;
+        }
+    }
+}
+
+.owl-carousel-second .img {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width: 813px) {
+    .hamburger-menu {
+        display: none;
+    }
+    // #sidebar{
+    //     display: none;
+    // }
+}
