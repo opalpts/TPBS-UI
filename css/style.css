@@ -14,12 +14,12 @@ a:focus {
 .wrapper {
   display: flex; }
 
-#main-content {
+#main {
   margin-left: 0;
   width: 100%;
   padding-bottom: 80px; }
   @media (min-width: 813px) {
-    #main-content {
+    #main {
       margin-left: 215px;
       width: calc(100% - 215px); } }
 
