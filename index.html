@@ -106,16 +106,16 @@
                                 <div class="col-4">
                                     <img src="image/logo_podcast.png" style="width: 160px;" />
                                 </div>
-                                <div class="col-8" style="text-align: right;">
-                                    <ul class="nav">
+                                <div class="col-8" style="position: relative;">
+                                    <ul class="nav" style="position: absolute;right: 0;">
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#">หน้าหลัก</a>
+                                            <a class="nav-link active" href="#">หน้าหลัก</a>
                                         </li>
                                         <li class="nav-item ">
                                             <a class="nav-link" href="#">รายการ</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link active" href="#">ผู้จัดรายการ</a>
+                                            <a class="nav-link" href="#">ผู้จัดรายการ</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1182,7 +1182,7 @@
             }
         });
         $('.owl-carousel-four').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 0,
             nav: true,
             navText: ['', ''],

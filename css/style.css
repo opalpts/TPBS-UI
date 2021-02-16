@@ -114,8 +114,8 @@ a:focus {
     top: 50%;
     position: absolute;
     background-color: #fff !important;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border-radius: 50% !important;
     box-shadow: 0 0 8px #9ca4ab; }
   .btn-first .owl-nav .owl-prev {
@@ -167,8 +167,8 @@ a:focus {
     top: 30%;
     position: absolute;
     background-color: #fff !important;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border-radius: 50% !important;
     box-shadow: 0 0 8px #9ca4ab; }
   .btn-second .owl-nav .owl-prev {
@@ -271,11 +271,11 @@ a:focus {
     transform: translate(0, -50%);
     bottom: -3px; }
   .btn-four .owl-nav button {
-    top: 40%;
+    top: 30%;
     position: absolute;
     background-color: #fff !important;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border-radius: 50% !important;
     box-shadow: 0 0 8px #9ca4ab; }
   .btn-four .owl-nav .owl-prev {
