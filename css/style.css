@@ -391,6 +391,8 @@ a:focus {
       color: #5f6161;
       font-size: 0.94em; }
       .highlights-box .highlights-description .highlights-detail .highlights-body span {
+        overflow: hidden;
+        text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
