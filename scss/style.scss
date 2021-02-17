@@ -263,6 +263,9 @@
         font-weight: bold;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
     .program {
         color: #aeafb0;
@@ -436,40 +439,181 @@
 
     ///////////////////////////
     .highlights-box {
-        background-color: #FFF;
+        background-color: #fff;
         box-shadow: 0 0 8px #e5e5e5;
         border-radius: 5px;
+
+        .highlights-img {
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 5px 5px 0 0;
+                object-fit: cover;
+                object-position: center;
+
+                @media (min-width: 992px) {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                @media (min-width: 1200px) {
+                    border-radius: 5px 0 0 5px;
+                }
+            }
+
+            .img {
+                position: relative;
+                height: 100%;
+                .middle {
+                    opacity: 0;
+                    border-radius: 5px;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(241, 101, 34, 0.8) 100%);
+                    top: 0;
+                }
+
+                &:hover {
+                    .middle {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .highlights-description {
+            position: relative;
+            padding-bottom: 30px;
+            &:before {
+                content: "";
+                width: 16px;
+                height: 20px;
+                border-right: solid 20px #fff;
+                border-bottom: solid 16px transparent;
+                border-top: solid 16px transparent;
+                position: absolute;
+                top: 12%;
+                left: -20px;
+                display: none;
+                @media (min-width: 992px) {
+                    display: block;
+                }
+            }
+
+            .highlights-detail {
+                .topic-content {
+                    margin-bottom: 15px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #eee;
+                    @media (min-width: 768px) {
+                        margin-bottom: 15px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        margin-bottom: 15px;
+                    }
+                    &:hover {
+                        color: #f16522;
+                    }
+                }
+
+                .highlights-body {
+                    padding-top: 30px;
+                    color: #5f6161;
+                    font-size: 0.94em;
+                    span {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+
+                        @media (min-width: 1200px) {
+                            -webkit-line-clamp: 5 !important;
+                        }
+                    }
+
+                    @media (min-width: 768px) {
+                        padding-top: 15px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        padding-top: 30px;
+                    }
+                }
+
+                .highlights-type {
+                    display: inline-block;
+                    border-radius: 12px;
+                    padding: 1px 16px;
+                    font-size: 15px;
+                    color: #5fbb63;
+                    background-color: #eff8ef;
+                }
+            }
+        }
     }
 
-    .highlights-type {
-        display: inline-block;
-        border-radius: 12px;
-        padding: 1px 16px;
-        font-size: 15px;
-    }
+    .highlights-small-box {
+        border-radius: 5px;
+        box-shadow: 0 0 8px #e5e5e5;
+        background-color: #fff;
 
-    .highlights-topic {
-        min-height: 56px;
-        overflow: hidden;
-        display: -webkit-box !important;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        color: #3c4142;
-        font-size: 1.2em;
-        font-weight: bold;
-        cursor: pointer;
-        transition: color 0.3s ease;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #eee;
-    }
+        .img {
+            position: relative;
+            img {
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+            }
 
-    .ellipsis {
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
+            .middle {
+                opacity: 0;
+                border-radius: 5px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(241, 101, 34, 0.8) 100%);
+                top: 0;
+            }
 
-    .highlights-body {
-        padding-top: 30px;
-        color: #5f6161;
-        font-size: 0.94em;
+            &:hover {
+                .middle {
+                    opacity: 1;
+                }
+            }
+        }
+        .detail {
+            padding: 15px;
+        }
+
+        .highlights-date {
+            padding: 7px 0;
+            border-top: 1px solid #eee;
+            div {
+                &:first-child {
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .highlights-type {
+            display: inline-block;
+            border-radius: 12px;
+            padding: 1px 16px;
+            font-size: 15px;
+        }
+        .topic-content {
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            &:hover {
+                color: #f16522;
+            }
+        }
     }
