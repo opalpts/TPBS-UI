@@ -2,7 +2,25 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+  scroll-behavior: smooth; }
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent; }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    opacity: 0.8; }
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #c1c1c1; }
 
 a,
 a:hover,
@@ -122,8 +140,11 @@ a:focus {
   .content {
     padding: 0 !important; }
 
-  .owl-carousel .owl-item img {
-    height: 150px; } }
+  .owl-carousel-first .owl-item img {
+    height: 150px; }
+
+  .first-carousel {
+    margin-top: 10px; } }
 .btn-all {
   display: block;
   text-align: right;

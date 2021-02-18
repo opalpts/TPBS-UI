@@ -3,6 +3,24 @@
         margin: 0;
         height: 100%;
         overflow-x: hidden;
+        background-color: #f3f3f3;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar-track {
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar {
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            opacity: 0.8;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #c1c1c1;
+        }
     }
 
     a,
@@ -163,8 +181,11 @@
         .content{
             padding: 0 !important;
         }
-        .owl-carousel .owl-item img {
+        .owl-carousel-first .owl-item img {
             height: 150px;
+        }
+        .first-carousel{
+            margin-top: 10px;
         }
     }
 
