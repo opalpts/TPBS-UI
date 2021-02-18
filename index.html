@@ -92,7 +92,7 @@
             </div>
 
         </div>
-    <!-- </div> -->
+    </div>
 
     <section id="main">
         <div id="head" style="display: block;">
@@ -1485,9 +1485,12 @@
     });
     $('.hamburger-menu').click(function(){
         $('#sidebar').show();
+        $('#sidebar').addClass('show');
     });
     $('.close').click(function(){
         $('#sidebar').hide();
+        $('#sidebar').removeAttr('style');
+        $('#sidebar').removeClass('show');
     });
 </script>
 

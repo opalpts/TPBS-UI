@@ -188,7 +188,9 @@
             margin-top: 10px;
         }
     }
-
+    .show{
+        position: inherit !important;
+    }
     .btn-all{
         display:block;
         text-align: right;
