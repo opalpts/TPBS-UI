@@ -72,16 +72,16 @@
             </ul>
 
             <div class="sidebar-footer-download components">
-                <div style="font-size: 10px;text-align: center;color: #aeafb0;">
+                <div style="font-size: 10px;color: #aeafb0;">
                     ดาวน์โหลด Thai PBS Podcast Application
                 </div>
-                <div class="pt-1" style="text-align: center;">
+                <div class="pt-1" >
                     <a href="#"><img src="image/btn_apple.png" width="88px"></a>
                     <a href="#"><img src="image/btn_google.png" width="88px"></a>
                 </div>
             </div>
 
-            <div class="sidebar-footer-social components" style="text-align: center;color: #aeafb0;">
+            <div class="sidebar-footer-social components" style="color: #aeafb0;">
                 <a href="#" class="p-2"><i class="fa fa-facebook-square"></i></a>
                 <a href="#" class="p-2"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="p-2"><i class="fa fa-youtube-play"></i></a>
@@ -1486,6 +1486,7 @@
     $('.hamburger-menu').click(function(){
         $('#sidebar').show();
         $('#main').hide();
+        $('.sidebar-footer-social').removeClass('components');
     });
     $('.close').click(function(){
         $('#sidebar').hide();
