@@ -41,8 +41,10 @@
 
     <div class="wrapper">
         <div id="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header d-flex justify-content-between">
+                <i class="fa fa-times close res" aria-hidden="true"></i>
                 <img src="image/logo_thaipbs.png" style="width: 50px;" />
+                <i class="fa fa-search res" aria-hidden="true"></i>
             </div>
 
             <ul class="list-unstyled components">
@@ -90,7 +92,7 @@
             </div>
 
         </div>
-    </div>
+    <!-- </div> -->
 
     <section id="main">
         <div id="head" style="display: block;">
@@ -107,7 +109,7 @@
                                     <img src="image/logo_podcast.png" style="width: 160px;" />
                                 </div>
                                 <div class="col-8" style="position: relative;">
-                                    <ul class="nav" style="position: absolute;right: 0;">
+                                    <ul class="nav hide" style="position: absolute;right: 0;">
                                         <li class="nav-item ">
                                             <a class="nav-link active" href="#">หน้าหลัก</a>
                                         </li>
@@ -128,7 +130,7 @@
                             <div class="d-flex justify-content-end">
                                 <ul class="nav">
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                                        <a class="nav-link hide" href="#"><i class="fa fa-search"></i></a>
                                     </li>
                                     <li class="nav-item ">
                                         <div class="nav-link px-0" href="#"><button class="login">เข้าสู่ระบบ</button>
@@ -142,10 +144,10 @@
                 </div>
             </div>
 
-            <section class="body col-12 p-0 mt-5">
-                <div class="content">
+            <section class="body col-12 p-0 pt-0 mt-5">
+                <div class="content p-5">
                     <div class="container-fluid">
-                        <div class="first-carousel col-12 p-5 pb-0">
+                        <div class="first-carousel col-12">
                             <div class="owl-carousel-first owl-carousel owl-theme btn-first">
                                 <div class="item mx-2 img">
                                     <img class="img" src="image/21.jpg" />
@@ -165,7 +167,7 @@
                             </div>
                         </div>
 
-                        <div class="second-carousel col-12 p-5 pb-0">
+                        <div class="second-carousel col-12 mt-5">
                             <div style="font-size: 20px;font-weight: bold;"><i class="fa fa-th-large"></i>
                                 หมวดหมู่รายการ
                             </div>
@@ -233,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class="third-carousel col-12 p-5 pb-0">
+                        <div class="third-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i class="fa fa-th-large"></i>
                                 มาใหม่ล่าสุด
                             </div>
@@ -493,7 +495,7 @@
                             </div>
                         </div>
 
-                        <div class="four-carousel col-12 p-5 pb-0">
+                        <div class="four-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i class="fa fa-star-o"></i>
                                 พอดคาสต์แนะนำ
                             </div>
@@ -581,14 +583,14 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-3 border-bottom">
-                                <div style="display:block;text-align: right;color: #f16522;">
+                                <div class="btn-all">
                                     ดูทั้งหมด
                                     <i class="fa fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="five-carousel col-12 p-5 pb-0">
+                        <div class="five-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i class="fa fa-list"></i>
                                 เพลย์ลิสต์แนะนำ
                             </div>
@@ -619,14 +621,14 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-3 border-bottom">
-                                <div style="display:block;text-align: right;color: #f16522;">
+                                <div class="btn-all">
                                     ดูทั้งหมด
                                     <i class="fa fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="six-carousel col-12 p-5 pb-0">
+                        <div class="six-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i class="fa fa-bar-chart"></i>
                                 พอดคาสต์ยอดนิยม 7 วันที่ผ่านมา
                             </div>
@@ -885,7 +887,7 @@
                             </div>
                         </div>
 
-                        <div class="seven-carousel col-12 p-5 pb-0">
+                        <div class="seven-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i class="fa fa-bar-chart"></i>
                                 ดาวน์โหลดยอดนิยม 7 วันที่ผ่านมา
                             </div>
@@ -1144,7 +1146,7 @@
                             </div>
                         </div>
 
-                        <div class="eight-carousel col-12 p-5 pb-0">
+                        <div class="eight-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;"><i
                                     class="fa fa-file-text-o"></i>
                                 บทความ
@@ -1257,14 +1259,14 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-3">
-                                <div style="display:block;text-align: right;color: #f16522;">
+                                <div class="btn-all">
                                     ดูทั้งหมด
                                     <i class="fa fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="nine-carousel col-12 p-5 pb-0">
+                        <div class="nine-carousel col-12 mt-5">
                             <div class="mb-3" style="font-size: 20px;font-weight: bold;">
                                 <i class="fa fa-newspaper-o"></i>
                                 ข่าวและกิจกรรม
@@ -1344,7 +1346,7 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-3">
-                                <div style="display:block;text-align: right;color: #f16522;">
+                                <div class="btn-all">
                                     ดูทั้งหมด
                                     <i class="fa fa-arrow-right"></i>
                                 </div>
@@ -1480,6 +1482,12 @@
                 }
             }
         });
+    });
+    $('.hamburger-menu').click(function(){
+        $('#sidebar').show();
+    });
+    $('.close').click(function(){
+        $('#sidebar').hide();
     });
 </script>
 
