@@ -58,6 +58,7 @@
         color: white;
         transition: all 0.3s;
         position: fixed;
+        border-right: 1px solid #e5e5e5;
 
         .sidebar-header {
             padding: 20px;
@@ -187,9 +188,6 @@
         .first-carousel{
             margin-top: 10px;
         }
-    }
-    .show{
-        position: inherit !important;
     }
     .btn-all{
         display:block;

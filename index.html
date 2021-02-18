@@ -1485,12 +1485,12 @@
     });
     $('.hamburger-menu').click(function(){
         $('#sidebar').show();
-        $('#sidebar').addClass('show');
+        $('#main').hide();
     });
     $('.close').click(function(){
         $('#sidebar').hide();
         $('#sidebar').removeAttr('style');
-        $('#sidebar').removeClass('show');
+        $('#main').show();
     });
 </script>
 
